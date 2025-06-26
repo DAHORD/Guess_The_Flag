@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Flag</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/logo.png">
+
+    <script src="script.js"></script>
+
+</head>
+    <body onload="setup()">
+		<div class="main-container2">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="https://paypal.me/LHKillian?country.x=FR&locale.x=fr_FR" target="blank" ><b>Donate 💲</b></a>
+				</br></br></br>
+				<h4> This game was created initially to divert you and why not improve your general knowledge about countries... </h4>
+				</br>
+				<div id="footer-sidenav">
+				<h5> Realised by LE HIR Killian </br>
+					<i>(junior in web dev)</i> </br>
+					Production time : ~26h </br>
+					Last modified : 02/19/2025 </br>
+						<hr/>
+					All rights reserved </h5>
+				</div>
+			</div>
+			<div id="main">
+				<h2>Donate & Information Panel</h2>
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()"><b>&#9776; Open</b></span>
+			</div>
+		</div>
+        <div class="main-container">
+            <div class="start-container">
+                <div>
+					<img src="icons/logo.png" alt="logo" >
+				</div>
+                <h1>Guess The Flag</h1>
+                <p><i>Guess the correct flag to win</i></p>
+				</br>
+				<div class="difficult-container">
+					<p>Difficulty : none </p>
+					</br>
+				</div>
+				<div class="details-difficult-container">	
+					<p>Flags : ? | Time : ?</p>
+					</br>
+				</div>
+                <div class="buttons-container">
+                    <button class="difficult-button" id="Easy">Easy</button>
+                    <button class="difficult-button" id="Medium">Medium</button>
+                    <button class="difficult-button" id="Hard">Hard</button>
+                </div>	
+                <div>
+					</br>
+					</br>
+					<button id="start-button">Start</button>
+				</div>
+            </div>
+			
+            <div class="game-container">
+                <div class="info-container">
+                    <p></p>
+                    <p id="score-label"></p>
+                </div>
+                <div class="title-container">
+					<h1>What flag is it?</h1>
+				</div>
+
+                <div class="flag-container">
+                    <!-- FLAG IMAGE -->
+                    <img src="https://flagcdn.com/w320/ua.png" id="flag">
+                </div>
+                <div class="flag-options">
+					</br>
+                    <button class="flag-button" id="1">Flag 1</button>
+					</br>
+                    <button class="flag-button" id="2">Flag 2</button>
+					</br>
+                    <button class="flag-button" id="3">Flag 3</button>
+					</br>
+                    <button class="flag-button" id="4">Flag 4</button>
+                </div>
+            </div>
+
+            <div class="result-container">
+                <div>
+					<img src="icons/logo.png" alt="logo">
+					</br>
+					</br>
+				</div>
+				<div class="res-comment">
+					<h2></h2>
+				</div>
+                <h1 id="resultsArea">Results : </h1>
+                <div>
+					</br>
+					<button id="newgames-button">Restart</button>
+				</div>
+            </div> 
+		</div>
+    </body>
+</html>
